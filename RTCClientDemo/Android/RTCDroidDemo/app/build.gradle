@@ -1,11 +1,11 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 26
     defaultConfig {
         applicationId "com.webrtc.droid.demo"
         minSdkVersion 16
-        targetSdkVersion 28
+        targetSdkVersion 26
         versionCode 1
         versionName "1.0"
     }
@@ -22,8 +22,11 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:appcompat-v7:26.0.0'
+    //实现socket长连接，接受推送  Manager类中new socket
     implementation 'io.socket:socket.io-client:1.0.0'
+    //实现推流和拉流
     implementation 'org.webrtc:google-webrtc:1.0.+'
+    //6.0快速申请权限工具
     implementation 'pub.devrel:easypermissions:1.1.3'
 }

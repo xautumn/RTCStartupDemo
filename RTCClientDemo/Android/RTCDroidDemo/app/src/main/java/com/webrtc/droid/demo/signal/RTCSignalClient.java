@@ -168,6 +168,7 @@ public class RTCSignalClient {
             @Override
             public void call(Object... args) {
                 JSONObject msg = (JSONObject) args[0];
+                Log.i(TAG,"broadcast data = " + msg);
                 try {
                     String userId = msg.getString("userId");
                     if (!mUserId.equals(userId) && mOnSignalEventListener != null) {

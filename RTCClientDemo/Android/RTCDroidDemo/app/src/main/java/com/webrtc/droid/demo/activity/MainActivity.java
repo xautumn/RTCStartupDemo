@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        getSupportActionBar().hide();
         final EditText serverEditText = findViewById(R.id.ServerEditText);
         final EditText roomEditText = findViewById(R.id.RoomEditText);
         findViewById(R.id.JoinRoomBtn).setOnClickListener(new View.OnClickListener() {
